@@ -12,7 +12,7 @@ RUN pip install -r requirements.txt
 COPY . /usr/src/app
 
 # expose port 80 of the container (HTTP port, change to 443 for HTTPS)
-EXPOSE 80
+EXPOSE 5001
 
 # needs to be set else Celery gives an error (because docker runs commands inside container as root)
 ENV C_FORCE_ROOT=1
